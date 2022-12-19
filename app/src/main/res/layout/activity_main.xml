@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="210dp"
+        android:layout_height="290dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bunnings_warehouse"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="200dp"
+        android:layout_height="290dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/tarneit_shoppingcenter" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bunnings_warehouse"
+        android:textSize="16sp"
+
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tarneit_shoppingcenter"
+        android:textSize="16sp"
+        />
+<!--    style = "?android:attr/ratingBarStyleIndicator"-->
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="4"
+        style = "?android:attr/ratingBarStyleSmall"
+        />
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBar3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:numStars="5"-->
+<!--        android:rating="4.5"-->
+<!--        style = "?android:attr/ratingBarStyleSmall"-->
+<!--        android:layout_marginBottom="20dp"-->
+
+<!--        />-->
+    <Switch
+        android:id="@+id/idSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+         />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="210dp"
+        android:layout_height="290dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/tarneit_medical_center" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="200dp"
+        android:layout_height="290dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/village_cinemas" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Tarneit West Medical Centre" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="village_cinemas" />
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBar4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style = "?android:attr/ratingBarStyleSmall"-->
+<!--        android:numStars="5"-->
+<!--        android:rating="4.5"-->
+<!--        />-->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+       >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/radioButton"
+            android:checked="true"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:textSize="14sp"
+            android:layout_weight="1"
+
+           />
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/ratingBar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="4"
+        style = "?android:attr/ratingBarStyleSmall"
+        />
+
+</GridLayout>
